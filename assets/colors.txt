@@ -1,0 +1,9 @@
+gradient background: 142141 to 513464
+purple: AE73A9
+red: FE766A
+orange: FE9055
+green: 94D6BA
+white: E6E6E6
+gray: B3B3B3
+blue: 00999E
+the boxes are just pure white at 7% opacity
