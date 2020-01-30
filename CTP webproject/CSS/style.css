@@ -1,0 +1,259 @@
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i|Cantata+one");
+
+/*Color Variables*/
+/*Top Header*/
+.main_content{
+	background-image: linear-gradient(black,purple);
+}
+
+/*Body*/
+
+/*preloader*/
+.preloader {
+	position: fixed;
+	width: device-width;
+	left: 0px;
+	top: 0px;
+	height: max-height;
+	background-repeat: no-repeat;
+	background-image: url(../images/preloader.gif);
+}
+
+
+/*Sectional text*/
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.title h2 {
+  font: 400 24px "Oswald", sans-serif;
+  color: #222222;
+  padding-top: 90px;
+  position: relative;
+  color: white;
+}
+.title h2:after {
+  content: "";
+  position: absolute;
+  background: #f6b60b;
+  height: 5px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+/*top head section*/
+.top_header {
+	text-align: center;
+	width: device-width;
+	initial-scale: 1;
+}
+
+.top_header_area {
+  background: #111f29;
+}
+.top_header_area .top_nav li a {
+  font: 400 14px/50px "Roboto", sans-serif;
+  color: #fff;
+  padding: 0;
+  padding-left: 30px;
+}
+.top_header_area .top_nav li a i {
+  color: #f6b60b;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.top_header_area .top_nav li a:hover, .top_header_area .top_nav li a:focus {
+  background-color: transparent;
+  color: #f6b60b;
+}
+.top_header_area .top_nav li:first-child a {
+  padding: 0;
+}
+.top_header_area .social_nav {
+  margin: 0;
+  padding-top: 12px;
+}
+.top_header_area .social_nav li a {
+  font-size: 14px;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.top_header_area .social_nav li a i {
+  line-height: 24px;
+}
+.top_header_area .social_nav li a:hover, .top_header_area .social_nav li a:focus {
+  background: #f6b60b;
+  color: #111f29;
+}
+
+/*navbar header section*/
+.navbar-header {
+	
+}
+.navbar-header .navbar-toggle collapsed{
+	
+
+}
+.navbar{
+	text-align:right;
+	margin-top: 1em;
+	margin bottom: 1em;
+}
+.navbar .navbar_menu .menuitem{
+	background-color: bisque;
+	text-emphasis-color: burlywood;
+}
+
+/*body*/
+.container {
+	border: grey;
+	padding: 5px;
+	border-radius: 25px;
+	filter: opacity(75%);
+	background-color: grey;
+	width: 75%;
+	padding-left: 20px;
+	margin-left: 155px;
+}
+.container .location_information {
+	text-emphasis-color: burlywood;
+}
+/*
+.location_information .PCL_Section_header h2 {
+	font-family: "Roboto";
+	font-size: 24px;
+	color: white;
+}
+*/
+/*PCL Body element modification*/
+.voting_information.col-md-4{
+	border-left: 1px;
+	
+}
+
+.voting_information.col-md-8{
+	width: 500px;
+	text-align: left;
+}
+
+.location_information .PCL_body_text{
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+}
+/*
+.location_information .FAC_Section_header h2 {
+	font-family: "Roboto";
+	font-size: 24px;
+	color: white;
+}
+*/
+.location_information .FAC_body_text {
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+}
+
+/*lower page- Checklist*/
+
+.container_lowerpage {
+	border: grey;
+	padding: 25px;
+	border-radius: 25px;
+	filter: opacity(75%);
+	background-color: grey;
+	#width: 75%;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.row1 {
+	#display: flex;
+	text-align: center;
+	margin: 0 auto;
+	margin-left: auto;
+}
+
+.row1 .col-md-4 {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	
+}
+
+.row1 .col-md-2{
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	max-width: 150px;
+	height: auto;
+
+}
+
+.row1 .col-md-8 {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	
+}
+
+.container_lowerpage .location_information {
+	flex: 1;
+	padding: 1em;
+	
+}
+.Checklist_left_pane {
+	
+}
+
+.location_information .Checklist_right_pane {
+	text-align: left;
+}
+.container_lowerpage.col-md-8 .location_information ul {
+	list-style-type: circle;
+	text-align: left;
+}
+
+/*General HTML attributes*/
+.main_content .main_title {
+	font-size: 30pt; 
+	color: #7e1c85; 
+	text-align: center
+}
+
+.container .row1 .voting_information h1{
+	font-family: Cantata_one;
+	font-size: 24pt;
+	color: white;
+}
+
+
+.container .location_information h2 {
+	
+}
+
+.container .location_information h3 {
+	font-family: Cantata_one;
+	font-size: 13pt;
+	color: white;
+	opacity: 0.6;
+}
+
+.container .location_information h4 {
+	font-family: Cantata_one;
+	font-size: 13pt;
+	color: white;
+}
+
+.row1 .vertical_line{
+	position: absolute;
+	-webkit-transform:rotate(90deg);
+	width: 100px;
+}
