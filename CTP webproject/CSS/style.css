@@ -2,9 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i|Cantata+one");
 
 /*Color Variables*/
+:root{
+	--purple: #AE73A9;
+	--red: #FE766A;
+	--orange: #FE9055;
+	--green: #94D6BA;
+	--white: #E6E6E6;
+	--gray: #B3B3B3;
+	--blue: #00999E;
+}
 /*Top Header*/
-.main_content{
-	background-image: linear-gradient(black,purple);
+body{
+	background-image: linear-gradient(#142141, #513464);
 }
 
 /*Body*/
@@ -96,33 +105,27 @@
 
 /*navbar header section*/
 .navbar-header {
-	
+
 }
 .navbar-header .navbar-toggle collapsed{
-	
+
 
 }
-.navbar{
-	text-align:right;
-	margin-top: 1em;
-	margin bottom: 1em;
-}
-.navbar .navbar_menu .menuitem{
-	background-color: bisque;
-	text-emphasis-color: burlywood;
+
+.topbar{
+	padding-top:12px;
 }
 
-/*body*/
-.container {
-	border: grey;
-	padding: 5px;
-	border-radius: 25px;
-	filter: opacity(75%);
-	background-color: grey;
-	width: 75%;
-	padding-left: 20px;
-	margin-left: 155px;
+.navbar_icon{
+	color: var(--white);
+	font-size: 24px;
+	padding:12px;
 }
+
+.navbar_icon.selected{
+	border-bottom: 2px solid var(--blue);
+}
+
 .container .location_information {
 	text-emphasis-color: burlywood;
 }
@@ -134,21 +137,73 @@
 }
 */
 /*PCL Body element modification*/
-.voting_information.col-md-4{
+.voting_information{
 	border-left: 1px;
-	
 }
 
-.voting_information.col-md-8{
-	width: 500px;
+.voting_information{
+	width: 100%;
 	text-align: left;
+	background: rgba(255,255,255,.17);
+	border-radius: 10px;
+	padding: 8px;
+	display:flex;
+	flex-direction: row;
+	align-items: stretch;
 }
 
-.location_information .PCL_body_text{
-	text-align: center;
-	padding-top: 15px;
-	color: white;
+.voting_information .voting_line_length{
+	border-left: 1px solid var(--white);
+	padding-right: 2px;
+	align-self: stretch;
+	flex: 3;
 }
+
+.voting_information .voting_details{
+	height: 100%;
+	flex: 5;
+}
+
+.voting_information .voting_time{
+	font-size: 8px;
+}
+
+.voting_information .voting_address{
+	font-size: 8px;
+}
+
+.voting_information .voting_location_name{
+	color: white;
+	font-size: 24px;
+	font-family:sans-serif;
+	font-weight: bold;
+}
+
+.voting_line_length .voting_line_length_time{
+	font-size: 48px;
+	font-weight: bold;
+	color: var(--orange);
+	width: 100%;
+	align-content: center;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.voting_line_length .voting_line_length_minute{
+	font-size: 12px;
+	color: var(--white);
+	width: 100%;
+	align-content: center;
+	text-align: center;
+}
+
+.voting_line_length {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 /*
 .location_information .FAC_Section_header h2 {
 	font-family: "Roboto";
@@ -185,7 +240,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
-	
+
 }
 
 .row1 .col-md-2{
@@ -201,16 +256,16 @@
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
-	
+
 }
 
 .container_lowerpage .location_information {
 	flex: 1;
 	padding: 1em;
-	
+
 }
 .Checklist_left_pane {
-	
+
 }
 
 .location_information .Checklist_right_pane {
@@ -222,10 +277,13 @@
 }
 
 /*General HTML attributes*/
-.main_content .main_title {
-	font-size: 30pt; 
-	color: #7e1c85; 
-	text-align: center
+.main_title {
+	font-size: 20pt;
+	color: var(--purple);
+	font-family: serif;
+	border-bottom: 1px solid var(--gray);
+	padding-bottom: 8px;
+	margin-bottom: 24px;
 }
 
 .container .row1 .voting_information h1{
@@ -234,9 +292,8 @@
 	color: white;
 }
 
-
 .container .location_information h2 {
-	
+
 }
 
 .container .location_information h3 {
